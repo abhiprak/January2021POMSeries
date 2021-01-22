@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="1" total="7" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RealERPSuite" duration-ms="40607" started-at="2021-01-04T15:26:34Z" finished-at="2021-01-04T15:27:14Z">
+    <groups>
+    </groups>
+    <test name="RealERPLoginPageTest" duration-ms="17231" started-at="2021-01-04T15:26:34Z" finished-at="2021-01-04T15:26:51Z">
+      <class name="com.qa.realerp.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.realerp.tests.LoginPageTest@2bea5ab4]" name="setUp" is-config="true" duration-ms="6959" started-at="2021-01-04T15:26:34Z" finished-at="2021-01-04T15:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyPageTitleTest()[pri:1, instance:com.qa.realerp.tests.LoginPageTest@2bea5ab4]" name="verifyPageTitleTest" duration-ms="26" started-at="2021-01-04T15:26:41Z" finished-at="2021-01-04T15:26:41Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Login | RealERP1] but found [Login | RealERP]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Login | RealERP1] but found [Login | RealERP]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.realerp.tests.LoginPageTest.verifyPageTitleTest(LoginPageTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitleTest -->
+        <test-method status="SKIP" signature="verifyForgotPasswordLinkTest()[pri:2, instance:com.qa.realerp.tests.LoginPageTest@2bea5ab4]" name="verifyForgotPasswordLinkTest" duration-ms="0" started-at="2021-01-04T15:26:41Z" depends-on-methods="com.qa.realerp.tests.LoginPageTest.verifyPageTitleTest" finished-at="2021-01-04T15:26:41Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method LoginPageTest.verifyForgotPasswordLinkTest()[pri:2, instance:com.qa.realerp.tests.LoginPageTest@2bea5ab4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method LoginPageTest.verifyForgotPasswordLinkTest()[pri:2, instance:com.qa.realerp.tests.LoginPageTest@2bea5ab4] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordLinkTest -->
+        <test-method status="PASS" signature="verifyValidLoginTest()[pri:4, instance:com.qa.realerp.tests.LoginPageTest@2bea5ab4]" name="verifyValidLoginTest" duration-ms="9511" started-at="2021-01-04T15:26:41Z" finished-at="2021-01-04T15:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.realerp.tests.LoginPageTest@2bea5ab4]" name="tearDown" is-config="true" duration-ms="692" started-at="2021-01-04T15:26:50Z" finished-at="2021-01-04T15:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.realerp.tests.LoginPageTest -->
+    </test> <!-- RealERPLoginPageTest -->
+    <test name="RealERPHomePageTest" duration-ms="21505" started-at="2021-01-04T15:26:53Z" finished-at="2021-01-04T15:27:14Z">
+      <class name="com.qa.realerp.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.realerp.tests.HomePageTest@4e41089d]" name="setUp" is-config="true" duration-ms="15183" started-at="2021-01-04T15:26:53Z" finished-at="2021-01-04T15:27:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPageTitleTest()[pri:1, instance:com.qa.realerp.tests.HomePageTest@4e41089d]" name="verifyPageTitleTest" duration-ms="6" started-at="2021-01-04T15:27:08Z" finished-at="2021-01-04T15:27:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitleTest -->
+        <test-method status="PASS" signature="verifyHRMLinkVisibilityTest()[pri:2, instance:com.qa.realerp.tests.HomePageTest@4e41089d]" name="verifyHRMLinkVisibilityTest" duration-ms="54" started-at="2021-01-04T15:27:08Z" finished-at="2021-01-04T15:27:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHRMLinkVisibilityTest -->
+        <test-method status="PASS" signature="verifyNavigationToHRMPageTest()[pri:3, instance:com.qa.realerp.tests.HomePageTest@4e41089d]" name="verifyNavigationToHRMPageTest" duration-ms="5562" started-at="2021-01-04T15:27:08Z" finished-at="2021-01-04T15:27:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToHRMPageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.realerp.tests.HomePageTest@4e41089d]" name="tearDown" is-config="true" duration-ms="695" started-at="2021-01-04T15:27:14Z" finished-at="2021-01-04T15:27:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.realerp.tests.HomePageTest -->
+    </test> <!-- RealERPHomePageTest -->
+  </suite> <!-- RealERPSuite -->
+</testng-results>
